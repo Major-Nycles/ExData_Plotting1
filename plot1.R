@@ -14,7 +14,7 @@ correct_dates <- data[data$Date == "1/2/2007"| data$Date == "2/2/2007",]
 
 correct_dates[,3] <- as.numeric(correct_dates[,3])
 
-png(filename = "plot1.png")
+png(filename = "plot1.png", width = 480, height = 480)
 
 with(correct_dates, hist(Global_active_power, 
                          col = "red", 

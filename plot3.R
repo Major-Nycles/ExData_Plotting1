@@ -22,7 +22,7 @@ correct_dates$V10 <- strptime(date_time, "%d/%m/%Y %H:%M:%S")
 
 colnames(correct_dates)[10] <- "Date/Time"
 
-png(filename = "plot3.png")
+png(filename = "plot3.png", width = 480, height = 480)
 
 plot(correct_dates$`Date/Time`, correct_dates$Sub_metering_1,
         type = "l", 

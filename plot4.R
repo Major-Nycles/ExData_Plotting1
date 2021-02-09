@@ -20,7 +20,7 @@ colnames(correct_dates)[10] <- "Date/Time"
 
 correct_dates[,3] <- as.numeric(correct_dates[,3])
 
-png(filename = "plot4.png")
+png(filename = "plot4.png", width = 480, height = 480)
 
 par(mfrow = c(2,2))
 plot(correct_dates$`Date/Time`, correct_dates$Global_active_power,

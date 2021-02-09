@@ -20,7 +20,7 @@ correct_dates$V10 <- strptime(date_time, "%d/%m/%Y %H:%M:%S")
 
 colnames(correct_dates)[10] <- "Date/Time"
 
-png(filename = "plot2.png")
+png(filename = "plot2.png", width = 480, height = 480)
 plot(correct_dates$`Date/Time`, correct_dates$Global_active_power,
      type = "l",
      ylab = "Global Active Power [kilowatts]",
